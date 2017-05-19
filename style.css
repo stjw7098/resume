@@ -1,0 +1,348 @@
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Microsoft YaHei', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    position: relative;
+}
+
+.bannerText {
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    text-align: center;
+    top: 35%;
+}
+
+@media screen and (min-width: 320px) {
+    /*.bannerText h1 {
+        font-size: 25px;
+        line-height: 48px;
+    }
+    .bannerText p {
+        font-size: 16px;
+    }*/
+    html {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    /*.bannerText h1 {
+        font-size: 35px;
+        line-height: 48px;
+    }*/
+    html {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    /*.bannerText h1 {
+        font-size: 45px;
+        line-height: 71px;
+    }
+    .bannerText p {
+        font-size: 25px;
+    }*/
+    html {
+        font-size: 24px;
+    }
+}
+
+.bannerText h1 {
+    color: #fff;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 2.2rem;
+    letter-spacing: 4px;
+}
+
+.bannerText p {
+    /*font-size: 1rem;*/
+    /*font-size: 16px;*/
+    color: #fff;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.banner .bg1,
+.banner .bg2,
+.banner .bg3 {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.banner .bg1 {
+    z-index: 1;
+}
+
+.banner .bg2 {
+    z-index: 2;
+}
+
+.banner .bg3 {
+    z-index: 3;
+}
+
+.banner p {
+    padding: 0 10px;
+    margin-top: 0.5rem;
+}
+
+.nav {
+    width: 100%;
+    height: 3rem;
+    background: white;
+}
+
+.navs {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navs a {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 0.9rem;
+    height: 3rem;
+    width: 15%;
+    line-height: 3rem;
+    text-align: center;
+}
+
+.nav a:hover {
+    color: #ef7674;
+}
+
+.nav .active {
+    color: #ef7674;
+}
+
+.fixNav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.about {
+    background: #f8f7f8;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.navs a {
+    cursor: pointer;
+}
+
+.about h1,
+.contact h1 {
+    height: 4rem;
+    line-height: 4rem;
+    color: #333;
+    font-size: 1.2rem;
+    border-bottom: 6px solid #ef7674;
+    padding-bottom: 10px;
+    width: 3.7rem;
+    margin: 0 auto;
+}
+
+.about p {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 0.7rem;
+    font-weight: bold;
+    line-height: 2rem;
+    /*font-weight: 400;*/
+    text-indent: 2rem;
+    color: #897f8a;
+}
+
+.about .github {
+    display: block;
+    box-sizing: border-box;
+    width: 8rem;
+    line-height: 2rem;
+    font-size: 0.8rem;
+    border: 2px solid #333;
+    border-radius: 10px;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px auto;
+    font-weight: bold;
+}
+
+.about .github:hover {
+    background: #333;
+    color: white;
+}
+
+.skill {
+    width: 100%;
+    padding-top: 30px;
+}
+
+.center {
+    width: 90%;
+    margin: 0 auto;
+    /*padding-left: 100px;*/
+}
+
+.skill .center>span {
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+
+.experience {
+    background: #f8f7f8;
+    padding-bottom: 30px;
+}
+
+.experience h1,
+.skill h1,
+.event h1 {
+    height: 4rem;
+    line-height: 4rem;
+    color: #333;
+    font-size: 1.2rem;
+    border-bottom: 6px solid #ef7674;
+    padding-bottom: 10px;
+    width: 2.8rem;
+    margin: 0 auto;
+}
+
+.experience p,
+.skill p,
+.event p,
+.contact p {
+    width: 100%;
+    margin: 10px auto;
+    font-size: 0.7rem;
+    font-weight: bold;
+    line-height: 2rem;
+    /*font-weight: 400;*/
+    text-indent: 2rem;
+    color: #897f8a;
+}
+
+.event p {
+    text-align: center;
+    text-indent: 0;
+}
+
+.experience .left {
+    float: left;
+}
+
+.experience .left span:nth-child(1) {
+    text-align: center;
+    line-height: 1.5rem;
+    display: block;
+    background: #ef7674;
+    color: white;
+    width: 5rem;
+    height: 1.5rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.experience .left span:nth-child(2) {
+    margin-top: 4px;
+    text-align: center;
+    line-height: 1.5rem;
+    display: inline-block;
+    background: #333;
+    color: white;
+    width: 5rem;
+    height: 1.5rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.experience .right {
+    float: left;
+    margin-left: 1rem;
+    border-left: 1px dashed #333;
+    padding-left: 30px;
+    /*width: 34rem;*/
+    width: 85%;
+}
+
+.experience .right i {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: 6px solid #333;
+    background: white;
+    position: relative;
+    left: -45px;
+    top: 20px;
+}
+
+.experience .right h3 {
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.experience .right p {
+    font-size: 0.8rem;
+    text-indent: 0;
+}
+
+.experience .right .introduce {
+    font-size: 0.7rem;
+    font-weight: bold;
+    line-height: 2rem;
+    /*font-weight: 400;*/
+    color: #897f8a;
+}
+
+.jianli {
+    overflow: hidden;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.event .item {
+    border-bottom: #ef7674 5px solid;
+    padding: 30px 30px;
+    font-size: 0.7rem;
+    color: #897f8a;
+}
+
+.contact {
+    background: #f8f7f8;
+    padding-bottom: 10px;
+    height: 20rem;
+}
+
+.contact img {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.row a {
+    float: right;
+    font-weight: bold;
+}
+
+.row .item {
+    text-indent: 2rem;
+}
